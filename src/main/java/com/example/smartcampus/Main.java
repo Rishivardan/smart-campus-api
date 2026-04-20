@@ -20,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         HttpServer server = startServer();
-        System.out.println("Smart Campus API running at " + BASE_URI + "api/v1");
+        System.out.println("Smart Campus API running at " + BASE_URI);
         Runtime.getRuntime().addShutdownHook(new Thread(server::shutdownNow));
     }
 }
